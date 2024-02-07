@@ -30,4 +30,23 @@ router.get("/users/:id",(req,res)=>{
     .catch((error)=>res.json({message: error}));
 });
 
+//put one users
+router.put("/users/:id",(req,res)=>{
+    const id = req.params.id;
+    const {name, age, email } = req.body;
+    userSchema
+    .updateOne({_id:id, }, {name, age, email })
+    .then((data)=>res.json(data))
+    .catch((error)=>res.json({message: error}));
+});
+
+//put one users
+router.delete("/users/:id",(req,res)=>{
+    const id = req.params.id;
+    userSchema
+    .deleteOne({_id:id, })
+    .then((data)=>res.json(data))
+    .catch((error)=>res.json({message: error}));
+});
+
 module.exports = router;
