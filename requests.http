@@ -7,3 +7,5 @@ Content-Type: application/json
     "email":"tahayk3@gmail.com"
 }
 
+###
+GET http://localhost:3000/api/users HTTP/1.1
