@@ -8,7 +8,10 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/users HTTP/1.1
+GET https://nodejs-mongodb-api-dev-xepqs.3.us-1.fl0.io/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users
 
 ###
 GET http://localhost:3000/api/users/65c3b06e7f1a3ee2f9c3142a HTTP/1.1
